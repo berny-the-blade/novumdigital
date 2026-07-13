@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://berny-the-blade.github.io/novumdigital/sitemap.xml
