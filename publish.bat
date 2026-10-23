@@ -1,5 +1,5 @@
 @echo off
-cd /d C:\Users\bernd\novumdigital
+cd /d "%~dp0"
 git add -A
 git commit -m "content update"
 git push origin master

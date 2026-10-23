@@ -144,10 +144,15 @@
 <a class="text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
 </div>
 <!-- Mobile Menu Toggle -->
-<button class="md:hidden text-on-background">
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Menu" class="md:hidden text-on-background" onclick="var m=document.getElementById('mobile-menu');m.classList.toggle('hidden');this.setAttribute('aria-expanded',!m.classList.contains('hidden'))">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden border-t border-outline-variant/30 px-margin-mobile py-2" id="mobile-menu">
+<a class="block py-3 text-tertiary font-headline-md text-[16px]" href="index.html">Home</a>
+<a class="block py-3 text-on-surface-variant font-headline-md text-[16px] hover:text-on-surface transition-colors duration-300" href="labs.html">Labs</a>
 </div>
 </nav>
 <!-- Main Content -->
